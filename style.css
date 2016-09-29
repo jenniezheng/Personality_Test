@@ -11,7 +11,7 @@
   padding-bottom:0em;
   text-align:center;
   color:black;
-  font-size:3.5em;
+  font-size:3em;
    letter-spacing: .1em;
 
   font-family:"Times New Roman";
@@ -22,12 +22,12 @@
        padding-top:0em;
   text-align:center;
   color:black;
-  font-size:1.3em;
+  font-size:1.2em;
   font-family:"Times New Roman";
   }
 
    #description3{
-  font-size:1.4em;
+  font-size:1.3em;
   font-family:"Times New Roman";
   text-align:left;
   }
@@ -35,10 +35,10 @@
   td, th { color:black;
 	    font-family:"Times New Roman";
 	    
-        font-size:1em;  }
+        font-size:1.1em;  }
 
        th  {
-         font-size:1.2em;
+         font-size:1.3em;
          text-align:center;
        }
 
