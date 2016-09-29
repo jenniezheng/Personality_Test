@@ -1,0 +1,158 @@
+ body{
+      background-color:white;
+          margin-left:15%;
+    margin-right:15%;
+  }
+
+
+  #description1 {
+  margin-top:.6em;
+  margin-bottom:.1em;
+  padding-bottom:0em;
+  text-align:center;
+  color:black;
+  font-size:4em;
+   letter-spacing: .1em;
+
+  font-family:"Times New Roman";
+  }
+  
+   #description2 {
+       margin-top:0em;
+       padding-top:0em;
+  text-align:center;
+  color:black;
+  font-size:1.5em;
+  font-family:"Times New Roman";
+  }
+
+   #description3{
+  font-size:1.6em;
+  font-family:"Times New Roman";
+  text-align:left;
+  }
+
+  td, th { color:black;
+	    font-family:"Times New Roman";
+	    
+        font-size:1.4em;  }
+
+       th  {
+         font-size:1.7em;
+         text-align:center;
+       }
+
+        td{
+          background: #ECECEA;
+        }
+
+         table, td, th {
+       
+        border-bottom:1px solid grey;
+          border-collapse:collapse;
+          margin-top:2em;
+          text-align:center;
+            padding: .3em;
+           }
+
+      table{
+    width:100%;
+  }
+
+
+  td:{
+   border:1px solid grey;
+         border-collapse:collapse;
+
+  }
+
+     td:first-child {background: #549290 ;
+    width:60%;
+       border:1px solid grey;
+         border-collapse:collapse;
+        color:white;
+           text-align:left;
+          }
+          
+td:nth-child(2) {
+color:green;
+   
+
+}
+     td:nth-child(8) {
+       border-right:1px solid grey;
+         border-collapse:collapse;
+         color:#C63D0F;
+         
+
+          }
+
+     td:hover {background-color:#DDDDDD;
+             color:black;
+     }
+     
+td:nth-child(3),td:nth-child(4) ,td:nth-child(5) ,td:nth-child(6), td:nth-child(7){ 
+padding:0; 
+margin:0;
+    
+}
+
+td:nth-child(3) input[type="radio"],td:nth-child(7) input[type="radio"]  {
+width:1.6em;
+height:1.6em;
+padding:0em;
+}
+ 
+td:nth-child(4) input[type="radio"],td:nth-child(6) input[type="radio"] {
+width:1.4em;
+height:1.4em;
+padding:0em;
+}
+
+td:nth-child(5) input[type="radio"] {
+width:1.2em;
+height:1.2em;
+padding:0em;
+}
+
+input[type="button"] {
+width:6em;
+height:2.2em;
+font-size:1.5em; 
+display: block;
+margin-left:auto;
+    margin-right:auto;
+    margin-top:3em;
+}
+
+#myProgress {
+    position: relative;
+    width: 100%;
+    height: 3em;
+    background-color: lightgrey;
+    border-radius: 2em;
+}
+#myBar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #76ca6c;
+    border-radius: 2em 0 0 2em ;
+}
+
+#myCanvas{
+    width:0;
+    height:0;
+}
+
+
+#label {
+  text-align: center;
+  line-height: 100%;
+  color: white;
+  font-size: 2em; 
+  padding:.3em;
+
+}
+
+

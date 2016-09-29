@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title> Psychology Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <script type ="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+
+
+
+<h3 id="description1">Edit This</h3>
+<p id="description2">Edit This</p>
+<p id="description3"></p>
+
+<div id="myProgress">
+  <div id="myBar"> 
+    <div id="label">10%</div>
+  </div>
+      <canvas id="myCanvas"></canvas>
+</div>
+<table>
+  <tr>
+	<th colspan="8">What irritates you more?
+</th>
+</tr>
+<tr>
+        <td>When things don't go according to plan </td>
+        <td>Agree</td>
+	<td><input type="radio" name="1A"  value="4" ></td>
+	<td><input type="radio" name="1A" value="3"> </td>
+	<td><input type="radio" name="1A" value="2"></td>
+	<td><input type="radio" name="1A" value="1"></td>
+	<td><input type="radio" name="1A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>When I'm bounded by obligations</td>
+          <td>Agree</td>
+	<td><input type="radio" name="1B" value="4" ></td>
+	<td><input type="radio" name="1B" value="3"> </td>
+	<td><input type="radio" name="1B" value="2"></td>
+	<td><input type="radio" name="1B" value="1"> </td>
+	<td><input type="radio" name="1B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">What do you value more?</th>
+</tr>
+<tr>
+        <td>Spontaneity </td>
+        <td>Agree</td>
+	<td><input type="radio" name="2A"  value="4" ></td>
+	<td><input type="radio" name="2A" value="3"> </td>
+	<td><input type="radio" name="2A" value="2"></td>
+	<td><input type="radio" name="2A" value="1"></td>
+	<td><input type="radio" name="2A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Structure </td>
+          <td>Agree</td>
+	<td><input type="radio" name="2B" value="4" ></td>
+	<td><input type="radio" name="2B" value="3"> </td>
+	<td><input type="radio" name="2B" value="2"></td>
+	<td><input type="radio" name="2B" value="1"> </td>
+	<td><input type="radio" name="2B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">Describe your attitude about your work ethic.</th>
+</tr>
+<tr>
+        <td>I would rather work in bursts of energy, so yes, I do procrastinate. I work better under pressure anyways.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="3A" value="4" ></td>
+	<td><input type="radio" name="3A" value="3"> </td>
+	<td><input type="radio" name="3A" value="2"></td>
+	<td><input type="radio" name="3A" value="1"></td>
+	<td><input type="radio" name="3A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>I admit to procrastinating, but I don't openly encourage it. Priorities are priorities.</td>
+         <td>Agree</td>
+	<td><input type="radio" name="3B" value="4" ></td>
+	<td><input type="radio" name="3B" value="3"> </td>
+	<td><input type="radio" name="3B" value="2"></td>
+	<td><input type="radio" name="3B" value="1"> </td>
+	<td><input type="radio" name="3B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">What statement describes your more?
+</th>
+</tr>
+<tr>
+        <td>Working before playing.
+</td>
+        <td>Agree</td>
+	<td><input type="radio" name="4A"  value="4" ></td>
+	<td><input type="radio" name="4A" value="3"> </td>
+	<td><input type="radio" name="4A" value="2"></td>
+	<td><input type="radio" name="4A" value="1"></td>
+	<td><input type="radio" name="4A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td> Playing while working.  
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="4B" value="4" ></td>
+	<td><input type="radio" name="4B" value="3"> </td>
+	<td><input type="radio" name="4B" value="2"></td>
+	<td><input type="radio" name="4B" value="1"> </td>
+	<td><input type="radio" name="4B" value="0"></td>
+     <td>Disagree</td>
+
+</tr>
+</table>
+     
+<br>
+<table>
+  <tr>
+	<th colspan="8">How do you interact with your environment to get things done?</th>
+</tr>
+<tr>
+        <td>Adapt to it, and use it. </td>
+        <td>Agree</td>
+	<td><input type="radio" name="5A"  value="4" ></td>
+	<td><input type="radio" name="5A" value="3"> </td>
+	<td><input type="radio" name="5A" value="2"></td>
+	<td><input type="radio" name="5A" value="1"></td>
+	<td><input type="radio" name="5A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Organize it, and use it. </td>
+          <td>Agree</td>
+	<td><input type="radio" name="5B" value="4" ></td>
+	<td><input type="radio" name="5B" value="3"> </td>
+	<td><input type="radio" name="5B" value="2"></td>
+	<td><input type="radio" name="5B" value="1"> </td>
+	<td><input type="radio" name="5B" value="0"></td>
+     <td>Disagree</td>
+
+</tr>
+</table>
+
+<br>
+
+
+<table>
+  <tr>
+	<th colspan="8">What is more important?</th>
+</tr>
+<tr>
+        <td>the process</td>
+        <td>Agree</td>
+	<td><input type="radio" name="6A"  value="4" ></td>
+	<td><input type="radio" name="6A" value="3"> </td>
+	<td><input type="radio" name="6A" value="2"></td>
+	<td><input type="radio" name="6A" value="1"></td>
+	<td><input type="radio" name="6A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>the result </td>
+          <td>Agree</td>
+	<td><input type="radio" name="6B" value="4" ></td>
+	<td><input type="radio" name="6B" value="3"> </td>
+	<td><input type="radio" name="6B" value="2"></td>
+	<td><input type="radio" name="6B" value="1"> </td>
+	<td><input type="radio" name="6B" value="0"></td>
+     <td>Disagree</td>
+      
+</tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+	<th colspan="8">When you go into a store...</th>
+</tr>
+<tr>
+        <td>You know exactly what you are going to get</td>
+        <td>Agree</td>
+	<td><input type="radio" name="7A"  value="4" ></td>
+	<td><input type="radio" name="7A" value="3"> </td>
+	<td><input type="radio" name="7A" value="2"></td>
+	<td><input type="radio" name="7A" value="1"></td>
+	<td><input type="radio" name="7A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>You look around in case there is something better or for a lower price  </td>
+          <td>Agree</td>
+	<td><input type="radio" name="7B" value="4" ></td>
+	<td><input type="radio" name="7B" value="3"> </td>
+	<td><input type="radio" name="7B" value="2"></td>
+	<td><input type="radio" name="7B" value="1"> </td>
+	<td><input type="radio" name="7B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">How should a parent raise their child?</th>
+</tr>
+<tr>
+        <td>Give them strict guidance, and prevent them from making mistakes.
+</td>
+        <td>Agree</td>
+	<td><input type="radio" name="8A"  value="4" ></td>
+	<td><input type="radio" name="8A" value="3"> </td>
+	<td><input type="radio" name="8A" value="2"></td>
+	<td><input type="radio" name="8A" value="1"></td>
+	<td><input type="radio" name="8A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Give them freedom, and let them learn from experience.  </td>
+          <td>Agree</td>
+	<td><input type="radio" name="8B" value="4" ></td>
+	<td><input type="radio" name="8B" value="3"> </td>
+	<td><input type="radio" name="8B" value="2"></td>
+	<td><input type="radio" name="8B" value="1"> </td>
+	<td><input type="radio" name="8B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">What is more important? </th>
+</tr>
+<tr>
+        <td>Flexibility</td>
+        <td>Agree</td>
+	<td><input type="radio" name="9A"  value="4" ></td>
+	<td><input type="radio" name="9A" value="3"> </td>
+	<td><input type="radio" name="9A" value="2"></td>
+	<td><input type="radio" name="9A" value="1"></td>
+	<td><input type="radio" name="9A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Stability </td>
+          <td>Agree</td>
+	<td><input type="radio" name="9B" value="4" ></td>
+	<td><input type="radio" name="9B" value="3"> </td>
+	<td><input type="radio" name="9B" value="2"></td>
+	<td><input type="radio" name="9B" value="1"> </td>
+	<td><input type="radio" name="9B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">Information...</th>
+</tr>
+<tr>
+        <td>Is malleable in the mind, but a pain in the ass to apply</td>
+        <td>Agree</td>
+	<td><input type="radio" name="10A"  value="4" ></td>
+	<td><input type="radio" name="10A" value="3"> </td>
+	<td><input type="radio" name="10A" value="2"></td>
+	<td><input type="radio" name="10A" value="1"></td>
+	<td><input type="radio" name="10A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Requires effort to digest, but powerful when applied  </td>
+          <td>Agree</td>
+	<td><input type="radio" name="10B" value="4" ></td>
+	<td><input type="radio" name="10B" value="3"> </td>
+	<td><input type="radio" name="10B" value="2"></td>
+	<td><input type="radio" name="10B" value="1"> </td>
+	<td><input type="radio" name="10B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">What would be your preferred thought process?
+</th>
+</tr>
+<tr>
+        <td>*Plans steps A-C* *Proceeds to do them according to plan* </td>
+        <td>Agree</td>
+	<td><input type="radio" name="11A"  value="4" ></td>
+	<td><input type="radio" name="11A" value="3"> </td>
+	<td><input type="radio" name="11A" value="2"></td>
+	<td><input type="radio" name="11A" value="1"></td>
+	<td><input type="radio" name="11A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>*Does step A* *Think about what to do next* *Does step B* *Thinks about what to do next* *Does Step C*</td>
+          <td>Agree</td>
+	<td><input type="radio" name="11B" value="4" ></td>
+	<td><input type="radio" name="11B" value="3"> </td>
+	<td><input type="radio" name="11B" value="2"></td>
+	<td><input type="radio" name="11B" value="1"> </td>
+	<td><input type="radio" name="11B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+
+<table>
+  <tr>
+	<th colspan="8">Even though you do both, what do you favor?</th>
+</tr>
+<tr>
+        <td>Giving someone forgiveness, since everyone makes mistakes.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="12A"  value="4" ></td>
+	<td><input type="radio" name="12A" value="3"> </td>
+	<td><input type="radio" name="12A" value="2"></td>
+	<td><input type="radio" name="12A" value="1"></td>
+	<td><input type="radio" name="12A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Giving permission, since I can overlook their decisions and guide them.   </td>
+          <td>Agree</td>
+	<td><input type="radio" name="12B" value="4" ></td>
+	<td><input type="radio" name="12B" value="3"> </td>
+	<td><input type="radio" name="12B" value="2"></td>
+	<td><input type="radio" name="12B" value="1"> </td>
+	<td><input type="radio" name="12B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+       <input type="button" value="Submit" onclick="main();">
+
+
+   <script >
+change();
+   
+   function main()
+   {
+     
+       checkAll(document.getElementsByTagName('input')) ;
+   var ansJ=[];
+    var ansP=[];
+
+    ansJ.push(document.querySelector('input[name = "1A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "1B"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "2A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "2B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "3A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "3B"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "4A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "4B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "5A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "5B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "6A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "6B"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "7A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "7B"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "8A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "8B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "9A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "9B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "10A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "10B"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "11A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "11B"]:checked').value);
+    ansP.push(document.querySelector('input[name = "12A"]:checked').value);
+    ansJ.push(document.querySelector('input[name = "12B"]:checked').value);
+
+
+    ansJ.push(document.querySelector('input[name = "1A"]:checked').value);
+    ansP.push(document.querySelector('input[name = "1B"]:checked').value);
+    calculating(ansJ, "J",ansP, "P", "fourth");
+    
+    
+    
+     var first= window.sessionStorage.getItem("first");
+     var fourth= window.sessionStorage.getItem("fourth");
+ 
+    if(first==="E"&&fourth==="P") window.location = "ExxPQuestions.html";
+     if(first==="E"&&fourth==="J") window.location = "ExxJQuestions.html";
+      if(first==="I"&&fourth==="P") window.location = "IxxPQuestions.html";
+       if(first==="I"&&fourth==="J") window.location = "IxxJQuestions.html";
+     
+  }
+ 
+   </script>
+
+
+
+</body>
+</html>

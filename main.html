@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title> Psychology Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <script type ="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+
+
+
+<h3 id="description1">Edit This</h3>
+<p id="description2">Edit This</p>
+<p id="description3"></p>
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label">10%</div>
+  </div>
+      <canvas id="myCanvas"></canvas>
+</div>
+
+<table>
+  <tr>
+	<th colspan="8">Making eye contact with people is</th>
+</tr>
+<tr>
+        <td>Uncommon, but given intensely to some special individuals</td>
+        <td>Agree</td>
+	<td><input type="radio" name="1A"  value="4" ></td>
+	<td><input type="radio" name="1A" value="3"> </td>
+	<td><input type="radio" name="1A" value="2"></td>
+	<td><input type="radio" name="1A" value="1"></td>
+	<td><input type="radio" name="1A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Common and quite effortless for me</td>
+          <td>Agree</td>
+	<td><input type="radio" name="1B" value="4" ></td>
+	<td><input type="radio" name="1B" value="3"> </td>
+	<td><input type="radio" name="1B" value="2"></td>
+	<td><input type="radio" name="1B" value="1"> </td>
+	<td><input type="radio" name="1B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">How do you view small talk?</th>
+</tr>
+<tr>
+        <td>Cumbersome and unnecessary</td>
+        <td>Agree</td>
+	<td><input type="radio" name="2A"  value="4" ></td>
+	<td><input type="radio" name="2A" value="3"> </td>
+	<td><input type="radio" name="2A" value="2"></td>
+	<td><input type="radio" name="2A" value="1"></td>
+	<td><input type="radio" name="2A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Natural and effortless</td>
+          <td>Agree</td>
+	<td><input type="radio" name="2B" value="4" ></td>
+	<td><input type="radio" name="2B" value="3"> </td>
+	<td><input type="radio" name="2B" value="2"></td>
+	<td><input type="radio" name="2B" value="1"> </td>
+	<td><input type="radio" name="2B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">When you meet a person for the first time, what do you pay more attention to?</th>
+</tr>
+<tr>
+        <td>The impression the person gives me, and what it could possibly mean.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="3A"  value="4" ></td>
+	<td><input type="radio" name="3A" value="3"> </td>
+	<td><input type="radio" name="3A" value="2"></td>
+	<td><input type="radio" name="3A" value="1"></td>
+	<td><input type="radio" name="3A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>The person&rsquo;s characteristics and how he/she presents them.</td>
+          <td>Agree</td>
+	<td><input type="radio" name="3B" value="4" ></td>
+	<td><input type="radio" name="3B" value="3"> </td>
+	<td><input type="radio" name="3B" value="2"></td>
+	<td><input type="radio" name="3B" value="1"> </td>
+	<td><input type="radio" name="3B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">What would you do if you had a crush?</th>
+</tr>
+<tr>
+        <td>Walk to confess to them, then turning away at the last second.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="4A"  value="4" ></td>
+	<td><input type="radio" name="4A" value="3"> </td>
+	<td><input type="radio" name="4A" value="2"></td>
+	<td><input type="radio" name="4A" value="1"></td>
+	<td><input type="radio" name="4A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>What is love? Baby don&rsquo;t hurt me.</td>
+          <td>Agree</td>
+	<td><input type="radio" name="4B" value="4" ></td>
+	<td><input type="radio" name="4B" value="3"> </td>
+	<td><input type="radio" name="4B" value="2"></td>
+	<td><input type="radio" name="4B" value="1"> </td>
+	<td><input type="radio" name="4B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Getting to know them by starting a conversation with them.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="4C"  value="4" ></td>
+	<td><input type="radio" name="4C" value="3"> </td>
+	<td><input type="radio" name="4C" value="2"></td>
+	<td><input type="radio" name="4C" value="1"></td>
+	<td><input type="radio" name="4C" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Ew cooties!</td>
+          <td>Agree</td>
+	<td><input type="radio" name="4D" value="4" ></td>
+	<td><input type="radio" name="4D" value="3"> </td>
+	<td><input type="radio" name="4D" value="2"></td>
+	<td><input type="radio" name="4D" value="1"> </td>
+	<td><input type="radio" name="4D" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+     
+<br>
+<table>
+  <tr>
+	<th colspan="8">What do you feel like when you work in a group for task?</th>
+</tr>
+<tr>
+        <td>I&rsquo;ll just do all the work and carry these plebeians.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="5A"  value="4" ></td>
+	<td><input type="radio" name="5A" value="3"> </td>
+	<td><input type="radio" name="5A" value="2"></td>
+	<td><input type="radio" name="5A" value="1"></td>
+	<td><input type="radio" name="5A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>I&rsquo;m kind of a lone wolf, but I&rsquo;ll be the leader if I have to.</td>
+          <td>Agree</td>
+	<td><input type="radio" name="5B" value="4" ></td>
+	<td><input type="radio" name="5B" value="3"> </td>
+	<td><input type="radio" name="5B" value="2"></td>
+	<td><input type="radio" name="5B" value="1"> </td>
+	<td><input type="radio" name="5B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>The only way for this to work is for me to discipline these imbeciles!</td>
+        <td>Agree</td>
+	<td><input type="radio" name="5C"  value="4" ></td>
+	<td><input type="radio" name="5C" value="3"> </td>
+	<td><input type="radio" name="5C" value="2"></td>
+	<td><input type="radio" name="5C" value="1"></td>
+	<td><input type="radio" name="5C" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Put me in coach!</td>
+          <td>Agree</td>
+	<td><input type="radio" name="5D" value="4" ></td>
+	<td><input type="radio" name="5D" value="3"> </td>
+	<td><input type="radio" name="5D" value="2"></td>
+	<td><input type="radio" name="5D" value="1"> </td>
+	<td><input type="radio" name="5D" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+
+<br>
+
+
+<table>
+  <tr>
+	<th colspan="8">How are you at parties?</th>
+</tr>
+<tr>
+        <td>Why go, when there is always a party in my mind?</td>
+        <td>Agree</td>
+	<td><input type="radio" name="6A"  value="4" ></td>
+	<td><input type="radio" name="6A" value="3"> </td>
+	<td><input type="radio" name="6A" value="2"></td>
+	<td><input type="radio" name="6A" value="1"></td>
+	<td><input type="radio" name="6A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Just freeload some food, and go sit in a corner.</td>
+          <td>Agree</td>
+	<td><input type="radio" name="6B" value="4" ></td>
+	<td><input type="radio" name="6B" value="3"> </td>
+	<td><input type="radio" name="6B" value="2"></td>
+	<td><input type="radio" name="6B" value="1"> </td>
+	<td><input type="radio" name="6B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>I&rsquo;m a freakin&rsquo; party animal!</td>
+        <td>Agree</td>
+	<td><input type="radio" name="6C"  value="4" ></td>
+	<td><input type="radio" name="6C" value="3"> </td>
+	<td><input type="radio" name="6C" value="2"></td>
+	<td><input type="radio" name="6C" value="1"></td>
+	<td><input type="radio" name="6C" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Ahem. I was the one who organized the party.</td>
+          <td>Agree</td>
+	<td><input type="radio" name="6D" value="4" ></td>
+	<td><input type="radio" name="6D" value="3"> </td>
+	<td><input type="radio" name="6D" value="2"></td>
+	<td><input type="radio" name="6D" value="1"> </td>
+	<td><input type="radio" name="6D" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+	<th colspan="8">Hypothetically, an evangelist is passionately giving a sermon to you. How do you feel?</th>
+</tr>
+<tr>
+        <td>A bit uncomfortable, and weary as it goes on</td>
+        <td>Agree</td>
+	<td><input type="radio" name="7A"  value="4" ></td>
+	<td><input type="radio" name="7A" value="3"> </td>
+	<td><input type="radio" name="7A" value="2"></td>
+	<td><input type="radio" name="7A" value="1"></td>
+	<td><input type="radio" name="7A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Energized and inspired </td>
+          <td>Agree</td>
+	<td><input type="radio" name="7B" value="4" ></td>
+	<td><input type="radio" name="7B" value="3"> </td>
+	<td><input type="radio" name="7B" value="2"></td>
+	<td><input type="radio" name="7B" value="1"> </td>
+	<td><input type="radio" name="7B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">Do you</th>
+</tr>
+<tr>
+        <td>Think before speaking</td>
+        <td>Agree</td>
+	<td><input type="radio" name="8A"  value="4" ></td>
+	<td><input type="radio" name="8A" value="3"> </td>
+	<td><input type="radio" name="8A" value="2"></td>
+	<td><input type="radio" name="8A" value="1"></td>
+	<td><input type="radio" name="8A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Think while speaking </td>
+          <td>Agree</td>
+	<td><input type="radio" name="8B" value="4" ></td>
+	<td><input type="radio" name="8B" value="3"> </td>
+	<td><input type="radio" name="8B" value="2"></td>
+	<td><input type="radio" name="8B" value="1"> </td>
+	<td><input type="radio" name="8B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">What saying applies to you more?</th>
+</tr>
+<tr>
+        <td>Silence is golden.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="9A"  value="4" ></td>
+	<td><input type="radio" name="9A" value="3"> </td>
+	<td><input type="radio" name="9A" value="2"></td>
+	<td><input type="radio" name="9A" value="1"></td>
+	<td><input type="radio" name="9A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Seize the day! </td>
+          <td>Agree</td>
+	<td><input type="radio" name="9B" value="4" ></td>
+	<td><input type="radio" name="9B" value="3"> </td>
+	<td><input type="radio" name="9B" value="2"></td>
+	<td><input type="radio" name="9B" value="1"> </td>
+	<td><input type="radio" name="9B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">You are more like yourself</th>
+</tr>
+<tr>
+        <td>When alone</td>
+        <td>Agree</td>
+	<td><input type="radio" name="10A"  value="4" ></td>
+	<td><input type="radio" name="10A" value="3"> </td>
+	<td><input type="radio" name="10A" value="2"></td>
+	<td><input type="radio" name="10A" value="1"></td>
+	<td><input type="radio" name="10A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>In a crowd </td>
+          <td>Agree</td>
+	<td><input type="radio" name="10B" value="4" ></td>
+	<td><input type="radio" name="10B" value="3"> </td>
+	<td><input type="radio" name="10B" value="2"></td>
+	<td><input type="radio" name="10B" value="1"> </td>
+	<td><input type="radio" name="10B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+<table>
+  <tr>
+	<th colspan="8">What do you do more?</th>
+</tr>
+<tr>
+        <td>Listen</td>
+        <td>Agree</td>
+	<td><input type="radio" name="11A"  value="4" ></td>
+	<td><input type="radio" name="11A" value="3"> </td>
+	<td><input type="radio" name="11A" value="2"></td>
+	<td><input type="radio" name="11A" value="1"></td>
+	<td><input type="radio" name="11A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Talk </td>
+          <td>Agree</td>
+	<td><input type="radio" name="11B" value="4" ></td>
+	<td><input type="radio" name="11B" value="3"> </td>
+	<td><input type="radio" name="11B" value="2"></td>
+	<td><input type="radio" name="11B" value="1"> </td>
+	<td><input type="radio" name="11B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+
+<table>
+  <tr>
+	<th colspan="8">To you, what does being alone for the most part mean?</th>
+</tr>
+<tr>
+        <td>Solitude, where I can think clearly.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="12A"  value="4" ></td>
+	<td><input type="radio" name="12A" value="3"> </td>
+	<td><input type="radio" name="12A" value="2"></td>
+	<td><input type="radio" name="12A" value="1"></td>
+	<td><input type="radio" name="12A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Isolation, where I feel lonely. </td>
+          <td>Agree</td>
+	<td><input type="radio" name="12B" value="4" ></td>
+	<td><input type="radio" name="12B" value="3"> </td>
+	<td><input type="radio" name="12B" value="2"></td>
+	<td><input type="radio" name="12B" value="1"> </td>
+	<td><input type="radio" name="12B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+
+       <input type="button" value="Submit" onclick="main();">
+       
+       
+   <script >
+   change(0);
+
+   function main()
+   {
+   checkAll(document.getElementsByTagName("input"));
+    var ansI=[];
+    var ansE=[];
+
+    ansI.push(document.querySelector('input[name = "1A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "1B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "2A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "2B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "3A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "3B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "4A"]:checked').value);
+    ansI.push(document.querySelector('input[name = "4B"]:checked').value);
+    ansE.push(document.querySelector('input[name = "4C"]:checked').value);
+    ansE.push(document.querySelector('input[name = "4D"]:checked').value);
+    ansI.push(document.querySelector('input[name = "5A"]:checked').value);
+    ansI.push(document.querySelector('input[name = "5B"]:checked').value);
+    ansE.push(document.querySelector('input[name = "5C"]:checked').value);
+    ansE.push(document.querySelector('input[name = "5D"]:checked').value);
+    ansI.push(document.querySelector('input[name = "6A"]:checked').value);
+    ansI.push(document.querySelector('input[name = "6B"]:checked').value);
+    ansE.push(document.querySelector('input[name = "6C"]:checked').value);
+    ansE.push(document.querySelector('input[name = "6D"]:checked').value);
+    ansI.push(document.querySelector('input[name = "7A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "7B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "8A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "8B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "9A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "9B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "10A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "10B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "11A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "11B"]:checked').value);
+    ansI.push(document.querySelector('input[name = "12A"]:checked').value);
+    ansE.push(document.querySelector('input[name = "12B"]:checked').value);
+
+    calculating(ansI, "I",ansE, "E", "first");
+    window.location = "JPQuestions.html";
+  }
+   </script>
+
+
+
+</body>
+</html>

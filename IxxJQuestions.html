@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title> Psychology Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <script type ="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+
+<h3 id="description1">Edit This</h3>
+<p id="description2">Edit This</p>
+<p id="description3"></p>
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label">10%</div>
+  </div>
+      <canvas id="myCanvas"></canvas>
+</div>
+
+<table>
+  <tr>
+	<th colspan="8">Which one of these would be your preferred method of taking a test knowing you&rsquo;ll get 100% either way.
+</th>
+</tr>
+<tr>
+        <td>Memorize the answer key</td>
+        <td>Agree</td>
+	<td><input type="radio" name="1A"  value="4" ></td>
+	<td><input type="radio" name="1A" value="3"> </td>
+	<td><input type="radio" name="1A" value="2"></td>
+	<td><input type="radio" name="1A" value="1"></td>
+	<td><input type="radio" name="1A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Intuitively figure out the answers of the test from recurring patterns and context clues 
+
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="1B" value="4" ></td>
+	<td><input type="radio" name="1B" value="3"> </td>
+	<td><input type="radio" name="1B" value="2"></td>
+	<td><input type="radio" name="1B" value="1"> </td>
+	<td><input type="radio" name="1B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">Statisically, what is your outlook towards life?
+</th>
+</tr>
+<tr>
+        <td>I take all data that I have collected over my whole life, and its trend is my worldview.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="2A"  value="4" ></td>
+	<td><input type="radio" name="2A" value="3"> </td>
+	<td><input type="radio" name="2A" value="2"></td>
+	<td><input type="radio" name="2A" value="1"></td>
+	<td><input type="radio" name="2A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>I take data, and look for an outlier , and for a period of time, that outlier is the most significant thing to do in a situation. 
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="2B" value="4" ></td>
+	<td><input type="radio" name="2B" value="3"> </td>
+	<td><input type="radio" name="2B" value="2"></td>
+	<td><input type="radio" name="2B" value="1"> </td>
+	<td><input type="radio" name="2B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">What is your preferred thought process when perceiving physical phenomena?
+</th>
+</tr>
+<tr>
+        <td>Conjecturing, where I ask, &ldquo;What is the bottom line of this raw data?&rdquo; </td>
+        <td>Agree</td>
+	<td><input type="radio" name="3A"  value="4" ></td>
+	<td><input type="radio" name="3A" value="3"> </td>
+	<td><input type="radio" name="3A" value="2"></td>
+	<td><input type="radio" name="3A" value="1"></td>
+	<td><input type="radio" name="3A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Examining, where I ask, &ldquo;What is the truth behind these different perspectives?&rdquo;
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="3B" value="4" ></td>
+	<td><input type="radio" name="3B" value="3"> </td>
+	<td><input type="radio" name="3B" value="2"></td>
+	<td><input type="radio" name="3B" value="1"> </td>
+	<td><input type="radio" name="3B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">What type of person would you admire, and possibly, have tried to mimic with not too much success? 
+</th>
+</tr>
+<tr>
+        <td>Someone who can get things done effectively, and is immune to periods of lethargy. </td>
+        <td>Agree</td>
+	<td><input type="radio" name="4A"  value="4" ></td>
+	<td><input type="radio" name="4A" value="3"> </td>
+	<td><input type="radio" name="4A" value="2"></td>
+	<td><input type="radio" name="4A" value="1"></td>
+	<td><input type="radio" name="4A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Someone who is imaginative, idiosyncratic, and the opposite of boring.  
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="4B" value="4" ></td>
+	<td><input type="radio" name="4B" value="3"> </td>
+	<td><input type="radio" name="4B" value="2"></td>
+	<td><input type="radio" name="4B" value="1"> </td>
+	<td><input type="radio" name="4B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">What describes your learning style better. 
+</th>
+</tr>
+<tr>
+        <td>Making connections and synthesizing ideas. </td>
+        <td>Agree</td>
+	<td><input type="radio" name="5A"  value="4" ></td>
+	<td><input type="radio" name="5A" value="3"> </td>
+	<td><input type="radio" name="5A" value="2"></td>
+	<td><input type="radio" name="5A" value="1"></td>
+	<td><input type="radio" name="5A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Digesting information and regurgitating and applying it. 
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="5B" value="4" ></td>
+	<td><input type="radio" name="5B" value="3"> </td>
+	<td><input type="radio" name="5B" value="2"></td>
+	<td><input type="radio" name="5B" value="1"> </td>
+	<td><input type="radio" name="5B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">Which statement is more true?
+</th>
+</tr>
+<tr>
+        <td>The world is plentiful in dumb people. Trust yourself to make decisions. 
+</td>
+        <td>Agree</td>
+	<td><input type="radio" name="6A"  value="4" ></td>
+	<td><input type="radio" name="6A" value="3"> </td>
+	<td><input type="radio" name="6A" value="2"></td>
+	<td><input type="radio" name="6A" value="1"></td>
+	<td><input type="radio" name="6A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Convention is consistent. Do not be contrarian (opposed to popular opinion).
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="6B" value="4" ></td>
+	<td><input type="radio" name="6B" value="3"> </td>
+	<td><input type="radio" name="6B" value="2"></td>
+	<td><input type="radio" name="6B" value="1"> </td>
+	<td><input type="radio" name="6B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">When you take notes in class, is it more important to
+</th>
+</tr>
+<tr>
+        <td>Write things word for word, for precision and accuracy. </td>
+        <td>Agree</td>
+	<td><input type="radio" name="7A"  value="4" ></td>
+	<td><input type="radio" name="7A" value="3"> </td>
+	<td><input type="radio" name="7A" value="2"></td>
+	<td><input type="radio" name="7A" value="1"></td>
+	<td><input type="radio" name="7A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Write things in your own words, for efficiency and effectiveness. </td>
+          <td>Agree</td>
+	<td><input type="radio" name="7B" value="4" ></td>
+	<td><input type="radio" name="7B" value="3"> </td>
+	<td><input type="radio" name="7B" value="2"></td>
+	<td><input type="radio" name="7B" value="1"> </td>
+	<td><input type="radio" name="7B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+
+<table>
+  <tr>
+	<th colspan="8">What dialogue, or internal dialogue do you picture yourself using more?
+</th>
+</tr>
+<tr>
+        <td>&ldquo;From my perspective&rdquo;, &ldquo;I&rsquo;ve just had a realization&rdquo;, &ldquo;It&rsquo;s highly unlikely that&rdquo;, &ldquo;Essentially/basically..&rdquo;
+</td>
+        <td>Agree</td>
+	<td><input type="radio" name="8A"  value="4" ></td>
+	<td><input type="radio" name="8A" value="3"> </td>
+	<td><input type="radio" name="8A" value="2"></td>
+	<td><input type="radio" name="8A" value="1"></td>
+	<td><input type="radio" name="8A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>&ldquo;It&rsquo;s hot in here&rdquo;, &ldquo;Nope. You look the same&rdquo;, &ldquo;Just enjoying life&rdquo;, &ldquo;In my experience..&rdquo;, &ldquo;He/she is cute&rdquo;
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="8B" value="4" ></td>
+	<td><input type="radio" name="8B" value="3"> </td>
+	<td><input type="radio" name="8B" value="2"></td>
+	<td><input type="radio" name="8B" value="1"> </td>
+	<td><input type="radio" name="8B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">What are you capable of engaging in, but are usually dismissive of or irritated by?
+</th>
+</tr>
+<tr>
+        <td>Relentless action toward goals, and the physical exertion of one’s own power</td>
+        <td>Agree</td>
+	<td><input type="radio" name="9A"  value="4" ></td>
+	<td><input type="radio" name="9A" value="3"> </td>
+	<td><input type="radio" name="9A" value="2"></td>
+	<td><input type="radio" name="9A" value="1"></td>
+	<td><input type="radio" name="9A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>The excessive brainstorming of possibilities with potential, yet are kind of irrelevant to the goal
+
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="9B" value="4" ></td>
+	<td><input type="radio" name="9B" value="3"> </td>
+	<td><input type="radio" name="9B" value="2"></td>
+	<td><input type="radio" name="9B" value="1"> </td>
+	<td><input type="radio" name="9B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">What is an area of weakness you want to work on, but haven&rsquo;t really gotten to?
+</th>
+</tr>
+<tr>
+        <td>Planning things for the future, with a proactive mind. </td>
+        <td>Agree</td>
+	<td><input type="radio" name="10A"  value="4" ></td>
+	<td><input type="radio" name="10A" value="3"> </td>
+	<td><input type="radio" name="10A" value="2"></td>
+	<td><input type="radio" name="10A" value="1"></td>
+	<td><input type="radio" name="10A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Taking it easy on myself, allowing for some rest. 
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="10B" value="4" ></td>
+	<td><input type="radio" name="10B" value="3"> </td>
+	<td><input type="radio" name="10B" value="2"></td>
+	<td><input type="radio" name="10B" value="1"> </td>
+	<td><input type="radio" name="10B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">What describes you more? 
+</th>
+</tr>
+<tr>
+        <td>Dutiful, diligent, and an undeniable sense of decency towards principles 
+</td>
+        <td>Agree</td>
+	<td><input type="radio" name="11A"  value="4" ></td>
+	<td><input type="radio" name="11A" value="3"> </td>
+	<td><input type="radio" name="11A" value="2"></td>
+	<td><input type="radio" name="11A" value="1"></td>
+	<td><input type="radio" name="11A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>Implicative, vision-driven, and a derived sense of integrity towards principles
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="11B" value="4" ></td>
+	<td><input type="radio" name="11B" value="3"> </td>
+	<td><input type="radio" name="11B" value="2"></td>
+	<td><input type="radio" name="11B" value="1"> </td>
+	<td><input type="radio" name="11B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+<table>
+  <tr>
+	<th colspan="8">Metaphorically, how do you like to perceive physical stimulus in the outside world?
+</th>
+</tr>
+<tr>
+        <td>I like to take objects, and project them on a screen to show a more in-depth, albeit fuzzier image.</td>
+        <td>Agree</td>
+	<td><input type="radio" name="12A"  value="4" ></td>
+	<td><input type="radio" name="12A" value="3"> </td>
+	<td><input type="radio" name="12A" value="2"></td>
+	<td><input type="radio" name="12A" value="1"></td>
+	<td><input type="radio" name="12A" value="0"> </td>
+     <td>Disagree</td>
+</tr>
+<tr>
+        <td>I like to take fuzzy, distant objects, and telescopically zoom in on them, to see a portion of its inner workings.
+</td>
+          <td>Agree</td>
+	<td><input type="radio" name="12B" value="4" ></td>
+	<td><input type="radio" name="12B" value="3"> </td>
+	<td><input type="radio" name="12B" value="2"></td>
+	<td><input type="radio" name="12B" value="1"> </td>
+	<td><input type="radio" name="12B" value="0"></td>
+     <td>Disagree</td>
+</tr>
+</table>
+        <br>
+        
+                
+       <input type="button" value="Submit" onclick="main();">
+
+
+   <script >
+   change();
+
+   function main()
+   {
+       checkAll(document.getElementsByTagName('input')) ;
+    var ansN=[];
+    var ansS=[];
+    
+    ansS.push(document.querySelector('input[name = "1A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "1B"]:checked').value);
+    ansS.push(document.querySelector('input[name = "2A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "2B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "3A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "3B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "4A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "4B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "5A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "5B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "6A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "6B"]:checked').value);
+    ansS.push(document.querySelector('input[name = "7A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "7B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "8A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "8B"]:checked').value);
+    ansS.push(document.querySelector('input[name = "9A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "9B"]:checked').value);
+    ansS.push(document.querySelector('input[name = "10A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "10B"]:checked').value);
+    ansS.push(document.querySelector('input[name = "11A"]:checked').value);
+    ansN.push(document.querySelector('input[name = "11B"]:checked').value);
+    ansN.push(document.querySelector('input[name = "12A"]:checked').value);
+    ansS.push(document.querySelector('input[name = "12B"]:checked').value);
+
+
+    calculating(ansN, "N",ansS, "S", "second");
+   
+     var sec= window.sessionStorage.getItem("second");
+ 
+  
+    if(sec==="S") window.location = "ISxJQuestions.html";
+    if(sec==="N")  window.location = "INxJQuestions.html";
+   }
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title> Psychology Test</title>
+  <link rel="stylesheet" type="text/css" href="results.css">
+</head>
+<body>
+      
+        
+ 
+    <h3 id="announce">Your Personality Type Is </h3>
+    <h1 id="type">This is your type.</h1>
+    
+
+       <p class=details>How you interact with other people</p>
+<div class=rightBar id="rightBar1">
+<div  class=rightLabel id="rightLabel1">label</div>     </div>
+  <div class=leftBar id="leftBar1">
+   <div  class=leftLabel id="leftLabel1">label</div>
+</div>
+
+       <p class=details>Where you focus your attention</p>
+<div class=rightBar id="rightBar2">
+<div  class=rightLabel id="rightLabel2">label</div>     </div>
+  <div class=leftBar id="leftBar2">
+   <div  class=leftLabel id="leftLabel2">label</div>
+</div>
+
+  <p class=details>How you respond to situations</p>
+<div class=rightBar id="rightBar3">
+<div  class=rightLabel id="rightLabel3">label</div>     </div>
+  <div class=leftBar id="leftBar3">
+   <div  class=leftLabel id="leftLabel3">label</div>
+</div>
+
+  <p class=details>Your approach to work</p>
+<div class=rightBar id="rightBar4">
+<div  class=rightLabel id="rightLabel4">label</div>     </div>
+  <div class=leftBar id="leftBar4">
+   <div  class=leftLabel id="leftLabel4">label</div>
+</div>
+
+
+<h2 id="formsTitle">  Lastly, please fill out this google forms to help with our psychology research. <br> Thank you for your time! </h2>
+<iframe src="https://docs.google.com/a/student.auhsd.us/forms/d/1Rbzgo2Yc7-1z50Yu_NxviYQbhwSdL1yCcyU0x0VTOT8/" > </iframe>
+        
+      <script>
+      var color="#74AFAD";
+        var first= window.sessionStorage.getItem("first");      
+    var second= window.sessionStorage.getItem("second");        
+      var third= window.sessionStorage.getItem("third");        
+        var fourth= window.sessionStorage.getItem("fourth"); 
+       document.getElementById("type").innerHTML = first+second+third+fourth;
+    
+        createBar("E", parseInt(window.sessionStorage.getItem("E")), "I",parseInt(window.sessionStorage.getItem("I")) , color,  document.getElementById("leftBar1"),document.getElementById("rightBar1"),  document.getElementById("leftLabel1"), document.getElementById("rightLabel1"));
+        
+         createBar("N", parseInt(window.sessionStorage.getItem("N")), "S",parseInt(window.sessionStorage.getItem("S")) , color,  document.getElementById("leftBar2"),document.getElementById("rightBar2"),  document.getElementById("leftLabel2"), document.getElementById("rightLabel2"));
+         
+          createBar("T", parseInt(window.sessionStorage.getItem("T")), "F",parseInt(window.sessionStorage.getItem("F")) , color,  document.getElementById("leftBar3"), document.getElementById("rightBar3"), document.getElementById("leftLabel3"), document.getElementById("rightLabel3"));
+          
+           createBar("J", parseInt(window.sessionStorage.getItem("J")), "P",parseInt(window.sessionStorage.getItem("P")) , color,  document.getElementById("leftBar4"), document.getElementById("rightBar4"), document.getElementById("leftLabel4"), document.getElementById("rightLabel4"));
+
+       function createBar(letter1, value1, letter2, value2, color, leftBar, rightBar, leftLabel, rightLabel)
+       {
+           if(value1===0&&value2===0) {value1++;value2++;}
+          var leftPercent=value1/(value1+value2);
+          if(leftPercent>.99)leftPercent=.99;
+          else if(leftPercent<.01)leftPercent=.01;
+           var rightPercent=1-leftPercent;
+
+           if(value1>value2)
+            leftBar.style.backgroundColor=color;
+              else 
+            rightBar.style.backgroundColor=color;
+
+            leftBar.style.width =leftPercent.toString()*70+"%";
+            var leftD, rightD;
+
+            if(letter1==="E")leftD="&nbsp;Extroversion";
+            else if(letter1==="N")leftD="&nbsp;Intuitive";
+              else if(letter1==="T")leftD="&nbsp;Thinking";
+                else leftD="&nbsp;Judging";
+              
+
+            if(letter2==="I")rightD="Introversion&nbsp;";
+            else if(letter2==="S")rightD="Sensing&nbsp;";
+              else if(letter2==="F")rightD="Feeling&nbsp;";
+                else rightD="Perceiving&nbsp;";
+                
+                 
+
+         leftLabel.innerHTML =Math.round(leftPercent*100).toString()+"%" + leftD;
+          rightLabel.innerHTML =rightD + Math.round(rightPercent*100).toString()+"%";
+
+       }
+      
+    </script>
+  
+
+
+
+
+</body>
+</html>
