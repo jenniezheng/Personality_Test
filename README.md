@@ -5,4 +5,4 @@ I used googledrive to host the website mainly because my school blocked most oth
 googledrive stopped allowing website hosting. I used only css, html, and javascript when other languages like jquery and bootstrap
 would have been more convenient because google drive didn't support many languages.
 
-<image src="test.png" width="600" height="400" align="middle"/>
+<div style="text-align:center"><image src="test.png" width="600" height="400" align="middle"/></div>
